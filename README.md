@@ -15,8 +15,8 @@ The package includes pre-compiled static libraries and object files:
 - All necessary C sources from the official Brotli release are compiled and included.
 
 Tested platforms:
-- Delphi (10.4 Sydney and later) – Windows 32/64-bit
-- Lazarus/FPC – Windows 32/64-bit and Linux 64-bit
+- Delphi (10.4 Sydney and later) – Windows 64-bit
+- Lazarus/FPC – Windows 64-bit and Linux 64-bit
 
 Delphi on Linux/macOS should work in principle (via static linking), but has not been tested (no FMX Linux environment available).
 
