@@ -697,7 +697,7 @@ function BrotliDecoderIsFinished(state: pointer): longint; cdecl; external;
 function BrotliDecoderGetErrorCode(state: pointer): BrotliDecoderErrorCode;
   cdecl; external;
 
-function BrotliDecoderErrorString(c: BrotliDecoderErrorCode): pchar;
+function BrotliDecoderErrorString(c: BrotliDecoderErrorCode): pansichar;
   cdecl; external;
 
 function BrotliDecoderVersion: uint32_t; cdecl; external;
@@ -1002,5 +1002,6 @@ end;
 
 
 end.
+
 
 
