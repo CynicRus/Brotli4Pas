@@ -66,7 +66,15 @@ const
   BROTLI_FALSE = 0;
 
 type
-  BROTLI_BOOL = longint;
+{$IFNDEF FPC}
+  {$IFDEF LINUX}
+    BROTLI_BOOL = FixedInt; 
+  {$ELSE}
+    BROTLI_BOOL = LongInt;
+  {$ENDIF}
+{$ELSE}
+  BROTLI_BOOL = LongInt;
+{$ENDIF}
 
 type
   int8_t = ShortInt;
@@ -994,4 +1002,5 @@ end;
 
 
 end.
+
 
