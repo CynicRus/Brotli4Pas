@@ -742,7 +742,7 @@ procedure BrotliEncoderDestroyInstance(state: pointer); cdecl; external;
 function BrotliEncoderMaxCompressedSize(input_size: size_t): size_t;
   cdecl; external;
 
-function BrotliEncoderCompress(quality: size_t; lgwin: size_t;
+function BrotliEncoderCompress(quality: integer; lgwin: integer;
   mode: BrotliEncoderMode; input_size: size_t; input_buffer: pointer;
   encoded_size: Psize_t; encoded_buffer: pointer): longint; cdecl; external;
 
@@ -1002,6 +1002,7 @@ end;
 
 
 end.
+
 
 
 
